@@ -1,0 +1,16 @@
+{
+  "_help": "Online content for the shop. Prices that players pay are set in Google Play Console; 'regular' and 'deal' here are only shown in the test version. A crossed-out price is always worked out by the game from the real Google Play prices (regular product, or 4 x VIP Weekly) and cannot be set here. Sales: at most 8 days, at least 30 days apart, or the game ignores them. 'ribbon' is the red label on a card (for example change RECOMMENDED to MOST POPULAR once sales data shows it); 'badge' and 'note' are the small tags. To add a new 70% OFF offer: add its item with 'dealSku' = a Play product at 30% of the regular price.",
+  "shop": {
+    "items": {
+      "no_ads":       { "regular": "₹1,349", "dealSku": "no_ads_deal", "deal": "₹399", "ribbon": "RECOMMENDED" },
+      "profit_x2":    { "regular": "₹999", "dealSku": "profit_x2_deal", "deal": "₹299" },
+      "vip_week":     { "regular": "₹49" },
+      "vip_month":    { "regular": "₹149", "ribbon": "BEST VALUE", "compareWeeks": 4 },
+      "starter_pack": { "regular": "₹19", "badge": "10× VALUE", "note": "One-time offer" }
+    },
+    "firstDays": { "days": 30, "label": "LIMITED TIME DEAL" },
+    "sales": [
+      { "id": "example_diwali", "label": "DIWALI DHAMAKA DEAL", "start": "2000-01-01T00:00:00+05:30", "end": "2000-01-08T23:59:59+05:30" }
+    ]
+  }
+}
