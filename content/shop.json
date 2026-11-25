@@ -2,15 +2,90 @@
   "_help": "Online content for the shop. Prices that players pay are set in Google Play Console; 'regular' and 'deal' here are only shown in the test version. A crossed-out price is always worked out by the game from the real Google Play prices (regular product, or 4 x VIP Weekly) and cannot be set here. Sales: at most 8 days, at least 30 days apart, or the game ignores them. 'ribbon' is the red label on a card (for example change RECOMMENDED to MOST POPULAR once sales data shows it); 'badge' and 'note' are the small tags. To add a new 70% OFF offer: add its item with 'dealSku' = a Play product at 30% of the regular price.",
   "shop": {
     "items": {
-      "no_ads":       { "regular": "₹1,349", "dealSku": "no_ads_deal", "deal": "₹399", "ribbon": "RECOMMENDED" },
-      "profit_x2":    { "regular": "₹999", "dealSku": "profit_x2_deal", "deal": "₹299" },
-      "vip_week":     { "regular": "₹49" },
-      "vip_month":    { "regular": "₹149", "ribbon": "BEST VALUE", "compareWeeks": 4 },
-      "starter_pack": { "regular": "₹19", "badge": "10× VALUE", "note": "One-time offer" }
+      "no_ads": {
+        "regular": "₹1,349",
+        "dealSku": "no_ads_deal",
+        "deal": "₹399",
+        "ribbon": "RECOMMENDED"
+      },
+      "profit_x2": {
+        "regular": "₹999",
+        "dealSku": "profit_x2_deal",
+        "deal": "₹299"
+      },
+      "vip_week": {
+        "regular": "₹49"
+      },
+      "vip_month": {
+        "regular": "₹149",
+        "ribbon": "BEST VALUE",
+        "compareWeeks": 4
+      },
+      "starter_pack": {
+        "regular": "₹19",
+        "badge": "10× VALUE",
+        "note": "One-time offer"
+      }
     },
-    "firstDays": { "days": 30, "label": "LIMITED TIME DEAL" },
+    "firstDays": {
+      "days": 30,
+      "label": "LIMITED TIME DEAL"
+    },
     "sales": [
       { "id": "example_diwali", "label": "DIWALI DHAMAKA DEAL", "start": "2000-01-01T00:00:00+05:30", "end": "2000-01-08T23:59:59+05:30" }
+    ]
+  },
+  "luxury": {
+    "_help": "Luxury items. You can change an item's name, desc (words), price (in rupees: 4000000000000 = ₹4 Lakh Crore, 1000000000 = ₹100 Crore), bonus (% more profit for all businesses) or rank (the big title that opens it: Kharabpati, Neelpati, Padmapati or Shankhpati; empty = from stage 8). You can add a new item only with a picture that is already in the game ('pic': the id of an existing item, e.g. 'island'). Items are never removed from players. Wearables and homes always stay in the first collection.",
+    "items": [
+      { "id": "shades", "name": "Designer Sunglasses", "price": 320000, "bonus": 1, "kind": "wear", "desc": "Handmade in Italy, with tiny diamonds in the frame" },
+      { "id": "shoes", "name": "Handmade Leather Shoes", "price": 980000, "bonus": 1, "kind": "wear", "desc": "Stitched by hand, polished to a mirror shine" },
+      { "id": "suit", "name": "Tailor-made Three-Piece Suit", "price": 1700000, "bonus": 1, "kind": "wear", "desc": "Cut to measure by a master tailor" },
+      { "id": "chain", "name": "Heavy Gold Chain", "price": 2300000, "bonus": 2, "kind": "wear", "desc": "Pure 24-carat gold" },
+      { "id": "watch", "name": "Swiss Luxury Watch", "price": 3700000, "bonus": 2, "kind": "wear", "desc": "18-carat gold, assembled by hand in Switzerland" },
+      { "id": "bike", "name": "Imported Superbike", "price": 5000000, "bonus": 2, "kind": "car", "desc": "0 to 100 km/h in under 3 seconds" },
+      { "id": "ring", "name": "Solitaire Diamond Ring", "price": 10000000, "bonus": 2, "kind": "wear", "desc": "A flawless 5-carat diamond" },
+      { "id": "sedan", "name": "Luxury Sedan", "price": 14000000, "bonus": 3, "kind": "car", "desc": "Comes with your own chauffeur" },
+      { "id": "bungalow", "name": "Sea-facing Bungalow", "price": 19000000, "bonus": 4, "kind": "home", "desc": "Your first big home: three bedrooms and a sea view" },
+      { "id": "suv", "name": "Royal Luxury SUV", "price": 40000000, "bonus": 3, "kind": "car", "desc": "Hand-built, made to order" },
+      { "id": "pool", "name": "Infinity Swimming Pool", "price": 54000000, "bonus": 3, "kind": "place", "desc": "An infinity pool that melts into the sea, with sun loungers" },
+      { "id": "hyper", "name": "Hypercar", "price": 72000000, "bonus": 3, "kind": "car", "desc": "Only 50 made in the whole world" },
+      { "id": "art", "name": "Masterpiece Painting", "price": 88000000, "bonus": 4, "kind": "trophy", "desc": "A famous old painting for your living room" },
+      { "id": "heli", "name": "Private Helicopter", "price": 100000000, "bonus": 4, "kind": "big", "desc": "Skip the traffic forever" },
+      { "id": "villa", "name": "Luxury Villa", "price": 110000000, "bonus": 4, "kind": "home", "desc": "Five bedrooms, marble floors and a rooftop garden" },
+      { "id": "stable", "name": "Racehorse Stable", "price": 180000000, "bonus": 4, "kind": "place", "desc": "A stable with two champion racehorses" },
+      { "id": "golf", "name": "Private Golf Course", "price": 240000000, "bonus": 5, "kind": "place", "desc": "Your own green, flag and golf cart" },
+      { "id": "yacht", "name": "Superyacht", "price": 340000000, "bonus": 5, "kind": "big", "desc": "A floating palace with a helipad" },
+      { "id": "space", "name": "Trip to Space", "price": 450000000, "bonus": 5, "kind": "big", "desc": "See the Earth from above, like an astronaut" },
+      { "id": "jet", "name": "Private Jet", "price": 510000000, "bonus": 5, "kind": "big", "desc": "Fly anywhere in the world, any time" },
+      { "id": "cricket", "name": "City Cricket Team", "price": 550000000, "bonus": 6, "kind": "trophy", "desc": "Your own team in the city T20 league" },
+      { "id": "mansion", "name": "Grand Mansion", "price": 590000000, "bonus": 6, "kind": "home", "desc": "Twelve bedrooms, a ballroom and a cinema" },
+      { "id": "submarine", "name": "Luxury Submarine", "price": 730000000, "bonus": 6, "kind": "big", "desc": "Dinner at the bottom of the sea" },
+      { "id": "tower", "name": "Skyscraper in Mumbai", "price": 1100000000, "bonus": 6, "kind": "trophy", "desc": "80 floors with your name on top" },
+      { "id": "football", "name": "Football Club", "price": 1600000000, "bonus": 7, "kind": "trophy", "desc": "Your own club with thousands of fans" },
+      { "id": "airship", "name": "Luxury Airship", "price": 2600000000, "bonus": 7, "kind": "big", "desc": "A flying hotel that floats above the clouds" },
+      { "id": "palace", "name": "Royal Palace", "price": 6300000000, "bonus": 8, "kind": "home", "desc": "Marble halls, gold ceilings, 300 rooms" },
+      { "id": "island", "name": "Private Island", "price": 28000000000, "bonus": 10, "kind": "place", "desc": "Your own tropical island with a villa and white sand beaches" },
+      { "id": "chalet", "name": "Ski Chalet in the Alps", "price": 40000000000, "bonus": 11, "kind": "place", "rank": "Kharabpati", "desc": "A wooden palace in the snow, with its own ski lift" },
+      { "id": "vineyard", "name": "Vineyard Estate in Europe", "price": 120000000000, "bonus": 12, "kind": "place", "rank": "Kharabpati", "desc": "Rolling hills of grapes around an old stone castle" },
+      { "id": "carmuseum", "name": "Classic Car Museum", "price": 400000000000, "bonus": 12, "kind": "trophy", "rank": "Kharabpati", "desc": "50 rare vintage cars in your own glass museum" },
+      { "id": "jetfleet", "name": "Private Jet Fleet", "price": 1300000000000, "bonus": 13, "kind": "big", "rank": "Kharabpati", "desc": "Your own little airline: a jet waiting for you in every big city" },
+      { "id": "gigayacht", "name": "Mega Yacht", "price": 4000000000000, "bonus": 14, "kind": "big", "rank": "Kharabpati", "desc": "150 metres long, with two helipads, a cinema and a beach club" },
+      { "id": "racing", "name": "Racing Team", "price": 4000000000000, "bonus": 14, "kind": "trophy", "rank": "Neelpati", "desc": "Two race cars, a pit crew and races all over the world" },
+      { "id": "royaltrain", "name": "Palace on Wheels", "price": 12000000000000, "bonus": 15, "kind": "big", "rank": "Neelpati", "desc": "Your own royal train with 20 golden coaches" },
+      { "id": "diamondmine", "name": "Pink Diamond Mine", "price": 40000000000000, "bonus": 16, "kind": "place", "rank": "Neelpati", "desc": "A mine full of the rarest diamonds on Earth" },
+      { "id": "moontrip", "name": "Trip Around the Moon", "price": 130000000000000, "bonus": 17, "kind": "big", "rank": "Neelpati", "desc": "Fly around the Moon and back with your whole family" },
+      { "id": "islands", "name": "Private Island Chain", "price": 400000000000000, "bonus": 18, "kind": "place", "rank": "Neelpati", "desc": "Seven islands with resorts, beaches and your own airport" },
+      { "id": "cricketleague", "name": "Own Cricket League", "price": 400000000000000, "bonus": 18, "kind": "trophy", "rank": "Padmapati", "desc": "A whole T20 league: 10 teams and the biggest stadium" },
+      { "id": "goldvault", "name": "Gold Vault", "price": 1200000000000000, "bonus": 19, "kind": "trophy", "rank": "Padmapati", "desc": "1,000 tonnes of gold bars behind a giant steel door" },
+      { "id": "palaces", "name": "Palace Collection", "price": 4000000000000000, "bonus": 20, "kind": "place", "rank": "Padmapati", "desc": "Royal palaces in Jaipur, Udaipur and London" },
+      { "id": "floatcity", "name": "Floating City", "price": 13000000000000000, "bonus": 21, "kind": "place", "rank": "Padmapati", "desc": "A city on the sea with parks, shops and 10,000 homes" },
+      { "id": "spacehotel", "name": "Private Space Station", "price": 40000000000000000, "bonus": 22, "kind": "big", "rank": "Padmapati", "desc": "Your own hotel circling high above the Earth" },
+      { "id": "seapalace", "name": "Undersea Palace", "price": 30000000000000000, "bonus": 24, "kind": "place", "rank": "Shankhpati", "desc": "A glass palace on the ocean floor, with whales outside your window" },
+      { "id": "worldtower", "name": "Tallest Tower on Earth", "price": 80000000000000000, "bonus": 25, "kind": "trophy", "rank": "Shankhpati", "desc": "Taller than any building ever made, with your name on top" },
+      { "id": "asteroid", "name": "Asteroid Gold Mine", "price": 200000000000000000, "bonus": 26, "kind": "big", "rank": "Shankhpati", "desc": "A spaceship that brings back gold from an asteroid" },
+      { "id": "moonbase", "name": "Moon Base", "price": 500000000000000000, "bonus": 28, "kind": "place", "rank": "Shankhpati", "desc": "Your own base on the Moon, with a garden under a glass dome" },
+      { "id": "marsrocket", "name": "Mission to Mars", "price": 1200000000000000000, "bonus": 30, "kind": "big", "rank": "Shankhpati", "desc": "The first rocket to Mars, with your name on it. The greatest thing money can buy." }
     ]
   }
 }
