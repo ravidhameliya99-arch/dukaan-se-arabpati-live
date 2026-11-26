@@ -72,7 +72,7 @@
       { "id": "jetfleet", "name": "Private Jet Fleet", "price": 1300000000000, "bonus": 13, "kind": "big", "rank": "Kharabpati", "desc": "Your own little airline: a jet waiting for you in every big city" },
       { "id": "gigayacht", "name": "Mega Yacht", "price": 4000000000000, "bonus": 14, "kind": "big", "rank": "Kharabpati", "desc": "150 metres long, with two helipads, a cinema and a beach club" },
       { "id": "racing", "name": "Racing Team", "price": 4000000000000, "bonus": 14, "kind": "trophy", "rank": "Neelpati", "desc": "Two race cars, a pit crew and races all over the world" },
-      { "id": "royaltrain", "name": "Palace on Wheels", "price": 12000000000000, "bonus": 15, "kind": "big", "rank": "Neelpati", "desc": "Your own royal train with 20 golden coaches" },
+      { "id": "royaltrain", "name": "Royal Heritage Train", "price": 12000000000000, "bonus": 15, "kind": "big", "rank": "Neelpati", "desc": "Your own royal train with 20 golden coaches" },
       { "id": "diamondmine", "name": "Pink Diamond Mine", "price": 40000000000000, "bonus": 16, "kind": "place", "rank": "Neelpati", "desc": "A mine full of the rarest diamonds on Earth" },
       { "id": "moontrip", "name": "Trip Around the Moon", "price": 130000000000000, "bonus": 17, "kind": "big", "rank": "Neelpati", "desc": "Fly around the Moon and back with your whole family" },
       { "id": "islands", "name": "Private Island Chain", "price": 400000000000000, "bonus": 18, "kind": "place", "rank": "Neelpati", "desc": "Seven islands with resorts, beaches and your own airport" },
